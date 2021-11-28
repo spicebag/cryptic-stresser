@@ -72,65 +72,7 @@ namespace ProcessBlocking
 		{
 			string[] array = new string[]
 			{
-				"solarwinds",
-				"paessler",
-				"cpacket",
-				"wireshark",
-				"Wireshark",
-				"Ethereal",
-				"sectools",
-				"riverbed",
-				"tcpdump",
-				"Kismet",
-				"EtherApe",
-				"Fiddler",
-				"telerik",
-				"de4dot",
-				"glasswire",
-				"HTTPDebuggerSvc",
-				"HTTPDebuggerUI",
-				"httpdebugger",
-				"charles",
-				"wpe",
-				"SoftPerfect",
-				"intercepter",
-				"snpa",
-				"dumcap",
-				"comview",
-				"winpcap",
-				"megadumper",
-				"MegaDumper",
-				"dnspy",
-				"ilspy",
-				"ProcessHacker",
-				"ollydbg",
-				"tcpview",
-				"tcpview",
-				"autoruns",
-				"autorunsc",
-				"filemon",
-				"procmon",
-				"regmon",
-				"procexp",
-				"idaq",
-				"idaq64",
-				"ImmunityDebugger",
-				"dumpcap",
-				"HookExplorer",
-				"ImportREC",
-				"PETools",
-				"LordPE",
-				"SysInspector",
-				"proc_analyzer",
-				"sysAnalyzer",
-				"sniff_hit",
-				"windbg",
-				"joeboxcontrol",
-				"joeboxserver",
-				"ResourceHacker",
-				"x32dbg",
-				"x64dbg",
-				"reflector"
+				"VOIDVOIDVOIDVOID"
 			};
 			bool flag = Process.GetProcessesByName(Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location)).Length > 2;
 			if (flag)
@@ -297,8 +239,7 @@ namespace ProcessBlocking
 		// Token: 0x04000005 RID: 5
 		private static readonly List<string> ProcessName = new List<string>
 		{
-			"ProcessHacker",
-			"taskmgr"
+			"VOIDVOIDVOIDVOID",
 		};
 	}
 }
