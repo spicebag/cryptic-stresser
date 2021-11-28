@@ -17,3 +17,6 @@ using System.Runtime.Versioning;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyDescription("")]
 [module: ConfusedBy("ConfuserEx v1.0.0")]
+
+// If you want to deobfuscate any files that might be obfuscated, I suggest using NoFuserEx (https://github.com/CodeShark-Dev/NoFuserEx)
+// I don't see what they "Protected" but feel free to poke around it.
