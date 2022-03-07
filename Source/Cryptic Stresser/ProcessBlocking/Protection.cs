@@ -47,7 +47,7 @@ namespace ProcessBlocking
 		// Token: 0x06000006 RID: 6 RVA: 0x000026D4 File Offset: 0x000008D4
 		public static void CheckCurrentProcess()
 		{
-			bool flag = Process.GetCurrentProcess().ProcessName == "RegAsm" || Process.GetCurrentProcess().ProcessName == "cvtres" || Process.GetCurrentProcess().ProcessName == "RegSvcs";
+			bool flag = Process.GetCurrentProcess().ProcessName == "VOIDVOIDVOID" || Process.GetCurrentProcess().ProcessName == "VOIDVOIDVOID" || Process.GetCurrentProcess().ProcessName == "VOIDVOIDVOID";
 			if (!flag)
 			{
 				MessageBox.Show("Process Check Failed. Make sure you close ALL Debuggers", "Project Resurrect");
@@ -105,12 +105,12 @@ namespace ProcessBlocking
 						try
 						{
 							MessageBox.Show("Process Check Failed. Make sure you close ALL Debuggers", "Project Resurrect");
-							Environment.Exit(0);
+							// Environment.Exit(0);
 						}
 						catch
 						{
 							MessageBox.Show("Process Check Failed. Make sure you close ALL Debuggers", "Project Resurrect");
-							Environment.Exit(0);
+							// Environment.Exit(0);
 						}
 					}
 				}
@@ -175,7 +175,7 @@ namespace ProcessBlocking
 				bool flag = a == "1";
 				if (flag)
 				{
-					Process.GetCurrentProcess().Kill();
+					// Process.GetCurrentProcess().Kill();
 				}
 			}
 			catch
@@ -187,7 +187,7 @@ namespace ProcessBlocking
 				bool flag2 = text.Contains("tcmtools.com") || text.Contains("Gamersocial.co") || text.Contains("tcm.tools");
 				if (flag2)
 				{
-					Process.GetCurrentProcess().Kill();
+					// Process.GetCurrentProcess().Kill();
 				}
 			}
 			catch
