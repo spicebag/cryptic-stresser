@@ -1,9 +1,7 @@
 ﻿namespace Cryptic_Stresser
 {
-	// Token: 0x02000008 RID: 8
 	public partial class Form1 : global::System.Windows.Forms.Form
 	{
-		// Token: 0x06000033 RID: 51 RVA: 0x000034A0 File Offset: 0x000016A0
 		protected override void Dispose(bool disposing)
 		{
 			bool flag = disposing && this.components != null;
@@ -14,7 +12,6 @@
 			base.Dispose(disposing);
 		}
 
-		// Token: 0x06000034 RID: 52 RVA: 0x000034D8 File Offset: 0x000016D8
 		private void InitializeComponent()
 		{
 			this.components = new global::System.ComponentModel.Container();
@@ -625,118 +622,80 @@
 			base.ResumeLayout(false);
 		}
 
-		// Token: 0x04000019 RID: 25
 		private global::System.ComponentModel.IContainer components = null;
 
-		// Token: 0x0400001A RID: 26
 		private global::System.Windows.Forms.PictureBox pictureBox1;
 
-		// Token: 0x0400001B RID: 27
 		private global::Guna.UI2.WinForms.Guna2Transition reg;
 
-		// Token: 0x0400001C RID: 28
 		private global::System.Windows.Forms.Panel panel1;
 
-		// Token: 0x0400001D RID: 29
 		private global::Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
 
-		// Token: 0x0400001E RID: 30
 		private global::Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
 
-		// Token: 0x0400001F RID: 31
 		private global::Guna.UI2.WinForms.Guna2Button guna2Button1;
 
-		// Token: 0x04000020 RID: 32
 		private global::Guna.UI2.WinForms.Guna2Button reg111;
 
-		// Token: 0x04000021 RID: 33
 		private global::Guna.UI2.WinForms.Guna2Button Back;
 
-		// Token: 0x04000022 RID: 34
 		private global::Guna.UI2.WinForms.Guna2Transition G;
 
-		// Token: 0x04000023 RID: 35
 		private global::System.Windows.Forms.Label label1;
 
-		// Token: 0x04000024 RID: 36
 		private global::Guna.UI2.WinForms.Guna2TextBox Token;
 
-		// Token: 0x04000025 RID: 37
 		private global::Guna.UI2.WinForms.Guna2TextBox email;
 
-		// Token: 0x04000026 RID: 38
 		private global::Guna.UI2.WinForms.Guna2TextBox Pass;
 
-		// Token: 0x04000027 RID: 39
 		private global::Guna.UI2.WinForms.Guna2TextBox User;
 
-		// Token: 0x04000028 RID: 40
 		private global::Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
 
-		// Token: 0x04000029 RID: 41
 		private global::Guna.UI2.WinForms.Guna2Separator guna2Separator1;
 
-		// Token: 0x0400002A RID: 42
 		private global::Guna.UI2.WinForms.Guna2Button guna2Button2;
 
-		// Token: 0x0400002B RID: 43
 		private global::Guna.UI2.WinForms.Guna2TextBox Pass2;
 
-		// Token: 0x0400002C RID: 44
 		private global::Guna.UI2.WinForms.Guna2TextBox User1;
 
-		// Token: 0x0400002D RID: 45
 		private global::System.Windows.Forms.Panel panel2;
 
-		// Token: 0x0400002E RID: 46
 		private global::System.Windows.Forms.Label label5;
 
-		// Token: 0x0400002F RID: 47
 		private global::System.Windows.Forms.Label label4;
 
-		// Token: 0x04000030 RID: 48
 		private global::System.Windows.Forms.Label label3;
 
-		// Token: 0x04000031 RID: 49
 		private global::System.Windows.Forms.Label label2;
 
-		// Token: 0x04000032 RID: 50
 		private global::Guna.UI2.WinForms.Guna2Button guna2Button3;
 
-		// Token: 0x04000033 RID: 51
 		private global::Guna.UI2.WinForms.Guna2Button Back2;
 
-		// Token: 0x04000034 RID: 52
 		private global::Guna.UI2.WinForms.Guna2DragControl guna2DragControl3;
 
-		// Token: 0x04000035 RID: 53
 		private global::Guna.UI2.WinForms.Guna2Transition meg;
 
-		// Token: 0x04000036 RID: 54
 		private global::Guna.UI2.WinForms.Guna2Transition msgpanel;
 
-		// Token: 0x04000037 RID: 55
 		private global::System.Windows.Forms.Panel msg;
 
-		// Token: 0x04000038 RID: 56
 		private global::System.Windows.Forms.Label msgtext;
 
-		// Token: 0x04000039 RID: 57
 		private global::Guna.UI2.WinForms.Guna2Button msgclose;
 
-		// Token: 0x0400003A RID: 58
 		private global::System.Windows.Forms.Timer exit;
 
-		// Token: 0x0400003B RID: 59
 		private global::System.Windows.Forms.Timer timeformsg;
 
-		// Token: 0x0400003C RID: 60
 		private global::Guna.UI2.WinForms.Guna2Button exitlogin;
 
-		// Token: 0x0400003D RID: 61
 		private global::Guna.UI2.WinForms.Guna2DragControl guna2DragControl4;
 
-		// Token: 0x0400003E RID: 62
 		private global::Guna.UI2.WinForms.Guna2DragControl guna2DragControl5;
 	}
 }
