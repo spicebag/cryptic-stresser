@@ -11,18 +11,14 @@ using Microsoft.Win32;
 
 namespace ProcessBlocking
 {
-	// Token: 0x02000002 RID: 2
 	internal class Protection
 	{
-		// Token: 0x06000002 RID: 2
 		[DllImport("kernel32.dll", CharSet = CharSet.Ansi)]
 		private static extern IntPtr LoadLibraryA([MarshalAs(UnmanagedType.LPStr)] string library);
 
-		// Token: 0x06000003 RID: 3
 		[DllImport("user32.dll")]
 		public static extern bool InternetSetOption(IntPtr hInternet, int dwOption, IntPtr lpBuffer, int dwBufferLength);
 
-		// Token: 0x06000004 RID: 4 RVA: 0x0000265C File Offset: 0x0000085C
 		public static string CalculateMD5(string filename)
 		{
 			string result;
@@ -37,14 +33,12 @@ namespace ProcessBlocking
 			return result;
 		}
 
-		// Token: 0x06000005 RID: 5 RVA: 0x00002052 File Offset: 0x00000252
 		public static void ChallengeCheck()
 		{
 			MessageBox.Show("Process Check Failed. Make sure you close ALL Debuggers", "Project Resurrect");
 			Environment.Exit(0);
 		}
 
-		// Token: 0x06000006 RID: 6 RVA: 0x000026D4 File Offset: 0x000008D4
 		public static void CheckCurrentProcess()
 		{
 			bool flag = Process.GetCurrentProcess().ProcessName == "VOIDVOIDVOID" || Process.GetCurrentProcess().ProcessName == "VOIDVOIDVOID" || Process.GetCurrentProcess().ProcessName == "VOIDVOIDVOID";
@@ -55,7 +49,6 @@ namespace ProcessBlocking
 			}
 		}
 
-		// Token: 0x06000007 RID: 7 RVA: 0x00002748 File Offset: 0x00000948
 		public static void LoopBlockProcess()
 		{
 			new Thread(delegate()
@@ -67,7 +60,6 @@ namespace ProcessBlocking
 			}.Start();
 		}
 
-		// Token: 0x06000008 RID: 8 RVA: 0x0000278C File Offset: 0x0000098C
 		private static void BlockProc()
 		{
 			string[] array = new string[]
@@ -117,7 +109,6 @@ namespace ProcessBlocking
 			}
 		}
 
-		// Token: 0x06000009 RID: 9 RVA: 0x00002B1C File Offset: 0x00000D1C
 		public static void ProtectionCheckLoopThread()
 		{
 			new Thread(delegate()
@@ -129,12 +120,10 @@ namespace ProcessBlocking
 			}.Start();
 		}
 
-		// Token: 0x0600000A RID: 10 RVA: 0x0000206C File Offset: 0x0000026C
 		public static void ProtectionCheckLoop()
 		{
 		}
 
-		// Token: 0x0600000B RID: 11 RVA: 0x0000206F File Offset: 0x0000026F
 		public static void ProtectionCheck()
 		{
 			Protection.BlockProc();
@@ -142,13 +131,11 @@ namespace ProcessBlocking
 			Protection.CheckForAnyProxyConnections();
 		}
 
-		// Token: 0x0600000C RID: 12 RVA: 0x00002B60 File Offset: 0x00000D60
 		public static bool CheckForFiddler()
 		{
 			return Protection.LoadLibraryA("FiddlerCore4.dll") != IntPtr.Zero || Protection.LoadLibraryA("Titanium.Web.Proxy.dll") != IntPtr.Zero;
 		}
 
-		// Token: 0x0600000D RID: 13 RVA: 0x00002BAC File Offset: 0x00000DAC
 		public static void DisableProxySettings()
 		{
 			try
@@ -164,7 +151,6 @@ namespace ProcessBlocking
 			}
 		}
 
-		// Token: 0x0600000E RID: 14 RVA: 0x00002C38 File Offset: 0x00000E38
 		private static void CheckForAnyProxyConnections()
 		{
 			try
@@ -195,7 +181,6 @@ namespace ProcessBlocking
 			}
 		}
 
-		// Token: 0x0600000F RID: 15 RVA: 0x00002D0C File Offset: 0x00000F0C
 		public static void Uninstall()
 		{
 			try
@@ -216,27 +201,20 @@ namespace ProcessBlocking
 			}
 		}
 
-		// Token: 0x06000010 RID: 16
 		[DllImport("kernel32.dll")]
 		public static extern IntPtr GetModuleHandle(string lpModuleName);
 
-		// Token: 0x06000011 RID: 17
 		[DllImport("kernel32.dll", ExactSpelling = true, SetLastError = true)]
 		private static extern bool CheckRemoteDebuggerPresent(IntPtr hProcess, ref bool isDebuggerPresent);
 
-		// Token: 0x04000001 RID: 1
 		public const int INTERNET_OPTION_SETTINGS_CHANGED = 39;
 
-		// Token: 0x04000002 RID: 2
 		public const int INTERNET_OPTION_REFRESH = 37;
 
-		// Token: 0x04000003 RID: 3
 		public static bool settingsReturn;
 
-		// Token: 0x04000004 RID: 4
 		public static bool refreshReturn;
 
-		// Token: 0x04000005 RID: 5
 		private static readonly List<string> ProcessName = new List<string>
 		{
 			"VOIDVOIDVOIDVOID",
