@@ -5,10 +5,8 @@ using System.Threading.Tasks;
 
 namespace Cryptic_Stresser
 {
-	// Token: 0x02000005 RID: 5
 	public class Data
 	{
-		// Token: 0x06000019 RID: 25 RVA: 0x00002DA4 File Offset: 0x00000FA4
 		[DebuggerStepThrough]
 		public static Task<string> NewsText()
 		{
@@ -19,7 +17,6 @@ namespace Cryptic_Stresser
 			return <NewsText>d__.<>t__builder.Task;
 		}
 
-		// Token: 0x0600001A RID: 26 RVA: 0x00002DE4 File Offset: 0x00000FE4
 		[DebuggerStepThrough]
 		public static Task<string> Download(string url)
 		{
@@ -31,7 +28,6 @@ namespace Cryptic_Stresser
 			return <Download>d__.<>t__builder.Task;
 		}
 
-		// Token: 0x04000009 RID: 9
 		public static FusionApp App = new FusionApp("APPID");
 	}
 }
