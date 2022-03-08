@@ -1,9 +1,7 @@
 ﻿namespace Cryptic_Stresser
 {
-	// Token: 0x0200000B RID: 11
 	public partial class Form2 : global::System.Windows.Forms.Form
 	{
-		// Token: 0x06000042 RID: 66 RVA: 0x00006290 File Offset: 0x00004490
 		protected override void Dispose(bool disposing)
 		{
 			bool flag = disposing && this.components != null;
@@ -14,7 +12,6 @@
 			base.Dispose(disposing);
 		}
 
-		// Token: 0x06000043 RID: 67 RVA: 0x000062C8 File Offset: 0x000044C8
 		private void InitializeComponent()
 		{
 			this.components = new global::System.ComponentModel.Container();
