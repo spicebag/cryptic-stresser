@@ -14,16 +14,13 @@ using Guna.UI2.WinForms.Enums;
 
 namespace Cryptic_Stresser
 {
-	// Token: 0x02000008 RID: 8
 	public partial class Form1 : Form
 	{
-		// Token: 0x06000023 RID: 35 RVA: 0x000020E0 File Offset: 0x000002E0
 		public Form1()
 		{
 			this.InitializeComponent();
 		}
 
-		// Token: 0x06000024 RID: 36 RVA: 0x000020F8 File Offset: 0x000002F8
 		private void guna2Button1_Click(object sender, EventArgs e)
 		{
 			this.reg.Show(this.panel1, false, null);
@@ -31,32 +28,27 @@ namespace Cryptic_Stresser
 			this.G.Show(this.reg111, false, null);
 		}
 
-		// Token: 0x06000025 RID: 37 RVA: 0x00002137 File Offset: 0x00000337
 		private void Back_Click(object sender, EventArgs e)
 		{
 			this.G.Hide(this.Back, false, null);
 			this.reg.Hide(this.panel1, false, null);
 		}
 
-		// Token: 0x06000026 RID: 38 RVA: 0x0000206C File Offset: 0x0000026C
 		private void guna2Separator1_Click(object sender, EventArgs e)
 		{
 		}
 
-		// Token: 0x06000027 RID: 39 RVA: 0x00002162 File Offset: 0x00000362
 		private void guna2Button3_Click(object sender, EventArgs e)
 		{
 			this.reg.Show(this.panel2, false, null);
 			this.G.Show(this.Back2, false, null);
 		}
 
-		// Token: 0x06000028 RID: 40 RVA: 0x0000218D File Offset: 0x0000038D
 		private void guna2Button4_Click(object sender, EventArgs e)
 		{
 			this.reg.Hide(this.panel2, false, null);
 		}
 
-		// Token: 0x06000029 RID: 41 RVA: 0x00003064 File Offset: 0x00001264
 		private void reg111_Click(object sender, EventArgs e)
 		{
 			bool flag = !this.email.Text.Contains("#");
@@ -84,7 +76,6 @@ namespace Cryptic_Stresser
 			}
 		}
 
-		// Token: 0x0600002A RID: 42 RVA: 0x00003168 File Offset: 0x00001368
 		[DebuggerStepThrough]
 		private Task guna2Button2_ClickAsync(object sender, EventArgs e)
 		{
@@ -98,12 +89,10 @@ namespace Cryptic_Stresser
 			return <guna2Button2_ClickAsync>d__.<>t__builder.Task;
 		}
 
-		// Token: 0x0600002B RID: 43 RVA: 0x0000206C File Offset: 0x0000026C
 		private void pictureBox1_Click(object sender, EventArgs e)
 		{
 		}
 
-		// Token: 0x0600002C RID: 44 RVA: 0x000031BC File Offset: 0x000013BC
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			this.handlers = default(DiscordRpc.EventHandlers);
@@ -123,7 +112,6 @@ namespace Cryptic_Stresser
 			}
 		}
 
-		// Token: 0x0600002D RID: 45 RVA: 0x00003290 File Offset: 0x00001490
 		private void guna2Button2_Click(object sender, EventArgs e)
 		{
 			bool flag = API.Login(this.User1.Text, this.Pass2.Text);
@@ -149,7 +137,6 @@ namespace Cryptic_Stresser
 			}
 		}
 
-		// Token: 0x0600002E RID: 46 RVA: 0x00003374 File Offset: 0x00001574
 		public static void wait(int milliseconds)
 		{
 			Timer timer1 = new Timer();
@@ -171,7 +158,6 @@ namespace Cryptic_Stresser
 			}
 		}
 
-		// Token: 0x0600002F RID: 47 RVA: 0x000033FC File Offset: 0x000015FC
 		private void timeformsg_Tick(object sender, EventArgs e)
 		{
 			bool visible = this.msg.Visible;
@@ -186,7 +172,6 @@ namespace Cryptic_Stresser
 			}
 		}
 
-		// Token: 0x06000030 RID: 48 RVA: 0x0000344C File Offset: 0x0000164C
 		private void exit_Tick(object sender, EventArgs e)
 		{
 			bool flag = base.Opacity > 0.0;
@@ -201,20 +186,16 @@ namespace Cryptic_Stresser
 			}
 		}
 
-		// Token: 0x06000031 RID: 49 RVA: 0x0000206C File Offset: 0x0000026C
 		private void exitlogin_Click(object sender, EventArgs e)
 		{
 		}
 
-		// Token: 0x06000032 RID: 50 RVA: 0x0000206C File Offset: 0x0000026C
 		private void guna2TrackBar1_Scroll(object sender, ScrollEventArgs e)
 		{
 		}
 
-		// Token: 0x04000017 RID: 23
 		private DiscordRpc.EventHandlers handlers;
 
-		// Token: 0x04000018 RID: 24
 		private DiscordRpc.RichPresence presence;
 	}
 }
